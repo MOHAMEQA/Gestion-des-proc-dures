@@ -1,0 +1,116 @@
+/* General reset for margin and padding */
+* {
+    margin: 0;
+    padding: 0;
+    
+  }
+  
+  /* Header styling */
+  .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #25629e; /* Dark blue background */
+    padding: 20px 20px; /* Reduced padding for shorter height */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    max-width: 2500px; /* Limit the width of the header */
+    margin: 0 ; /* Center the header */
+    border-radius: 0px; /* Rounded corners */
+    margin-top: 0px; /* Add some space at the top */
+  }
+  
+  /* Logo styling */
+  .logo {
+    font-size: 1.5rem; /* Slightly smaller font size */
+    font-weight: bold;
+    color: white;
+    margin: 0;
+    cursor: pointer;
+  }
+  
+  /* Right side of the header (navigation links and search) */
+  .header-right {
+    display: flex;
+    align-items: center;
+    gap: 20px; /* Space between elements */
+  }
+  
+  /* Search form styling */
+  .header-right form {
+    display: flex;
+    align-items: center;
+  }
+  
+  /* Search input styling */
+  .inputField {
+    padding: 8px 12px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+    width: 200px; /* Fixed width for the search input */
+    transition: border-color 0.3s ease;
+  }
+  
+  .inputField:focus {
+    border-color: #1abc9c; /* Teal color on focus */
+    outline: none;
+  }
+  
+  /* Navigation links styling */
+  .header-right a {
+    text-decoration: none;
+    color: white;
+    font-size: 1rem;
+    font-weight: 500;
+    transition: color 0.3s ease;
+  }
+  
+  .header-right a:hover {
+    color: #1abc9c; /* Teal color on hover */
+  }
+  
+  /* Active tab styling */
+  .header-right a .active {
+    color: #1abc9c; /* Teal color for active tab */
+    border-bottom: 2px solid #1abc9c; /* Underline for active tab */
+    padding-bottom: 5px;
+  }
+  
+  /* Responsive design for smaller screens */
+  @media (max-width: 768px) {
+    .header {
+      flex-direction: column;
+      align-items: flex-start;
+      padding: 10px;
+    }
+  
+    .logo {
+      font-size: 1.3rem; /* Smaller font size for mobile */
+      margin-bottom: 10px; /* Add space below the logo */
+    }
+  
+    .header-right {
+      width: 100%;
+      justify-content: space-between;
+      gap: 10px;
+    }
+  
+    .inputField {
+      width: 150px; /* Smaller input field for mobile */
+    }
+  }
+  .button-log {
+    background-color: #a80a0a; /* Darker background */
+    color: #fff; /* White text */
+    border: none;
+    padding: 10px 15px;
+    border-radius: 6px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle box shadow */
+  }
+  
+  .button-log:hover {
+    background-color: #d30b0b; /* Slightly lighter on hover */
+  }

@@ -1,0 +1,194 @@
+
+
+  /* Heading styling */
+  h2 {
+    color: #2c3e50;
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 2rem;
+    font-weight: 600;
+  }
+  
+  /* Table styling */
+  .guide-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 25px 0;
+    font-size: 0.9em;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    overflow: hidden;
+    background-color: #ffffff;
+  }
+  .btn-download {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0.75rem 1.5rem;
+    font-size: 0.875rem;
+    font-weight: 400;
+    line-height: 1rem;
+    color: #ffffff;
+    background-color: #2563eb;
+    border: 1px solid transparent;
+    border-radius: 0.375rem;
+    transition: all 0.2s ease-in-out;
+    cursor: pointer;
+   
+    
+  }
+  .btn-add {
+    background-color: #28a745; /* Vert */
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+    margin-bottom: 20px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    margin-right: 55rem;
+  }
+  .btn-download:hover {
+    background-color: #1dd82d;
+    transform: translateY(-1px);
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 
+                0 2px 4px -1px rgba(0, 0, 0, 0.06);
+  }
+  
+  .btn-download:active {
+    transform: translateY(0);
+    box-shadow: none;
+  }
+  
+  .btn-download:disabled {
+    opacity: 0.65;
+    cursor: not-allowed;
+    background-color: #93c5fd;
+  }
+  
+  /* Table header styling */
+  .guide-table thead tr {
+    background-color: #34495e;
+    color: #ffffff;
+    text-align: left;
+    font-weight: bold;
+  }
+  
+  .guide-table th,
+  .guide-table td {
+    padding: 15px 20px;
+    text-align: center;
+  }
+  
+  /* Table body styling */
+  .guide-table tbody tr {
+    border-bottom: 1px solid #e0e0e0;
+  }
+  
+  .guide-table tbody tr:nth-of-type(even) {
+    background-color: #f8f9fa;
+  }
+  
+  .guide-table tbody tr:last-of-type {
+    border-bottom: 2px solid #34495e;
+  }
+  
+  .guide-table tbody tr:hover {
+    background-color: #f1f1f1;
+    cursor: pointer;
+  }
+  
+  /* Button styling */
+  .btn {
+    padding: 8px 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 0.9em;
+    margin-right: 5px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .btn-edit {
+    background-color: #3498db; /* Blue */
+    color: white;
+  }
+  
+  .btn-edit:hover {
+    background-color: #2980b9;
+  }
+  
+  .btn-delete {
+    background-color: #e74c3c; /* Red */
+    color: white;
+  }
+  
+  .btn-delete:hover {
+    background-color: #c0392b;
+  }
+  
+  .btn-view {
+    background-color: #2ecc71; /* Green */
+    color: white;
+  }
+  
+  .btn-view:hover {
+    background-color: #27ae60;
+  }
+  
+  /* No data found message */
+  .no-data {
+    text-align: center;
+    font-style: italic;
+    color: #888;
+    padding: 20px;
+  }
+  /* Style de base pour le bouton */
+  .delete-button {
+    background-color: #ff4d4d;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-top: 10px;
+  }
+  
+  .delete-button:hover {
+    background-color: #cc0000;
+  }
+
+/* Effet au survol */
+.btn-add:hover {
+  background-color: #218838; /* Vert plus foncé */
+  transform: translateY(-2px); /* Légère élévation */
+}
+
+/* Effet au clic */
+.btn-add:active {
+  background-color: #1e7e34; /* Vert encore plus foncé */
+  transform: translateY(0); /* Retour à la position initiale */
+}
+
+/* Style pour le focus (accessibilité) */
+.btn-add:focus {
+  outline: none;
+  box-shadow: 0 0 0 3px rgba(40, 167, 69, 0.5); /* Lueur verte */
+}
+  /* Responsive design for smaller screens */
+  @media (max-width: 768px) {
+    .guide-table {
+      font-size: 0.8em;
+    }
+  
+    .guide-table th,
+    .guide-table td {
+      padding: 10px 15px;
+    }
+  
+    .btn {
+      padding: 6px 12px;
+      font-size: 0.8em;
+    }
+  }
